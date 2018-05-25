@@ -1,0 +1,5 @@
+CREATE TABLE produse(
+producator CHAR(1) DEFAULT 'A',
+model VARCHAR(4) DEFAULT 9999,
+tip VARCHAR(10) DEFAULT 'PC'
+);

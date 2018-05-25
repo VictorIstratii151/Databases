@@ -1,0 +1,9 @@
+CREATE TABLE pc_uri(
+cod INT IDENTITY(1, 1) PRIMARY KEY,
+model INT DEFAULT 9999,
+viteza INT DEFAULT 600,
+ram int DEFAULT 64,
+hd int DEFAULT 14,
+cd varchar(5) DEFAULT '24x',
+pret int DEFAULT 600
+);
