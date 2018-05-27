@@ -1,0 +1,9 @@
+USE MARY;
+
+CREATE TABLE books_authors(
+book_id INT(6) UNSIGNED NOT NULL,
+author_id INT(6) UNSIGNED NOT NULL,
+PRIMARY KEY book_author_pk (book_id, author_id),
+FOREIGN KEY (book_id) REFERENCES books(id) ON DELETE RESTRICT ON UPDATE CASCADE,
+FOREIGN KEY (author_id) REFERENCES authors(id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
